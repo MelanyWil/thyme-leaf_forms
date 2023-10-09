@@ -7,6 +7,12 @@
 
 <form method="post" action="/events/create">
     <div class="form-group">
+        <label>Date
+            <input th:field="${event.dateOfEvent}" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.dateOfEvent}"></p>
+    </div>
+    <div class="form-group">
         <label>Name
             <input th:field="${event.name}" class="form-control">
         </label>
@@ -17,6 +23,18 @@
             <input th:field="${event.description}" class="form-control">
         </label>
         <p class="error" th:errors="${event.description}"></p>
+    </div>
+    <div class="form-group">
+        <label>Location
+            <input th:field="${event.location}" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.location}"></p>
+    </div>
+    <div class="form-group">
+        <label>Number of Attendees
+            <input th:field="${event.numAttendees}" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.numAttendees}"></p>
     </div>
     <div class="form-group">
         <label>Contact Email
