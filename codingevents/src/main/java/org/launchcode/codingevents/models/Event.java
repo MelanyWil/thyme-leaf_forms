@@ -32,18 +32,19 @@ public class Event {
 
 
     public Event(Date dateOfEvent,String name, String description, String contactEmail, String location, int numAttendees) {
+        this();
         this.dateOfEvent = dateOfEvent;
         this.name = name;
         this.description = description;
         this.location = location;
         this.numAttendees = numAttendees;
         this.contactEmail = contactEmail;
-        this.id = nextId;
-        nextId++;
+
     }
 
     public Event(){
-
+        this.id = nextId;
+        nextId++;
     }
 
     public String getName() {

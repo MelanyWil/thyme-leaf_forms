@@ -21,8 +21,8 @@
         </tr>
     </thead>
     <tr th:each="event: ${events}">
-        <td th:text="${event.dateOfEvent}"></td>
         <td th:text="${event.id}"></td>
+        <td th:text="${event.dateOfEvent}"></td>
         <td th:text="${event.name}"></td>
         <td th:text="${event.description}"></td>
         <td th:text="${event.location}"></td>
