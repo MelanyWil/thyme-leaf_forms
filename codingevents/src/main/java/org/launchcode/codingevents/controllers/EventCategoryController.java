@@ -41,6 +41,6 @@ public class EventCategoryController {
             return "eventCategories/create";
         }
         eventCategoryRepository.save(eventCategory);
-        return "redirect/create";
+        return "redirect:/eventCategories";
     }
 }
